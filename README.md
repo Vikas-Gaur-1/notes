@@ -16,12 +16,6 @@ Markdown is a lightweight markup language used to format plain text. It’s wide
 - Unordered list item 1
 - Unordered list item 2
 
-### Code
-
-```python
-def hello_world():
-    print("Hello, World!")
-
 
 [OpenAI](https://openai.com)
 
@@ -50,3 +44,18 @@ def hello_world():
 Once you've created and saved your notes in `.md` format, you can use a Markdown viewer or an editor like **VS Code** or **Typora** to see the rendered version of your notes.
 
 If you're storing your notes on GitHub or OneDrive, you can simply upload the `.md` file to sync and access it across devices.
+
+
+### Code
+
+```python
+def hello_world():
+    print("Hello, World!")
+
+```
+
+
+### Explanation:
+1. The code block starts with three backticks (`) followed by the language identifier (`python` in this case).
+2. The code block ends with three backticks (`) placed **on a new line** without any extra spaces or indentation.
+3. Any text after the closing backticks will no longer be treated as part of the code block.
