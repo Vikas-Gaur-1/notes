@@ -34,7 +34,8 @@
 
 # QKDNetSim Component Diagram
 
-The diagram illustrates the two major modules in the QKDNetSim system: **QKD Core** and **QKD Application**. Each module contains components responsible for specific functionalities within the Quantum Key Distribution (QKD) system. Below is a detailed explanation:
+![sim-components](https://github.com/user-attachments/assets/bec80e09-d38c-426a-b61d-e078129f7c65)
+
 
 ---
 
