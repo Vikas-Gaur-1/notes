@@ -30,7 +30,68 @@
 - Enables quantum teleportation through classical information channels
 - Fundamental to protocols like Eckert's protocol for secure key distribution
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+
+# QKDNetSim Component Diagram
+
+The diagram illustrates the two major modules in the QKDNetSim system: **QKD Core** and **QKD Application**. Each module contains components responsible for specific functionalities within the Quantum Key Distribution (QKD) system. Below is a detailed explanation:
+
+---
+
+## **QKD Core**
+
+The **QKD Core** module includes fundamental components responsible for generating, managing, and processing quantum keys. These are the building blocks for secure communication. The components are:
+
+1. **QKD Key**
+   - Represents the quantum key object with attributes like key size, key value, and state.
+
+2. **QKD Buffer**
+   - Stores the generated quantum keys and manages thresholds for key availability.
+
+3. **QKD Control**
+   - Manages and monitors the QKD system's operations.
+
+4. **QKD Encryptor**
+   - Responsible for encryption processes using QKD keys.
+
+5. **QKD Helpers**
+   - Provides additional functionalities for the QKD system.
+   - Subcomponents:
+     - **QKD App Helper**: Assists applications in utilizing QKD keys.
+     - **QKD Link Helper**: Facilitates link-level operations and key exchanges.
+
+---
+
+## **QKD Application**
+
+The **QKD Application** module includes components that implement application-level functionality and post-processing mechanisms for QKD-based systems. The components are:
+
+1. **QKD Post-Processing**
+   - Handles key establishment and supplies keys to the Key Management System (KMS).
+
+2. **QKD Key Manager System**
+   - Manages the distribution and lifecycle of QKD keys for applications.
+
+3. **QKD Cryptographic Applications**
+   - Represents cryptographic applications that utilize QKD keys for secure communication.
+
+4. **QKD Application 004**
+   - A specific application designed for implementing QKD standards.
+
+5. **QKD Application 014**
+   - Implements the ETSI QKD 014 client and manages the fetching and utilization of keys.
+
+---
+
+### **Overview of the Interaction**
+
+- The **QKD Core** module provides essential services such as key generation, storage, and encryption. It forms the backbone of the system.
+- The **QKD Application** module uses these services to perform application-specific tasks like secure communication, post-processing, and cryptographic operations.
+
+This modular design ensures scalability and reusability across different quantum key distribution scenarios.
+
+
+-------------------------------------------------------------------------------------------------------------
 # QKDNetSim UML Diagram Explanation  
 
 ## QKD Post-Processing  
