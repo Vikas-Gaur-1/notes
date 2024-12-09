@@ -92,7 +92,10 @@ This modular design ensures scalability and reusability across different quantum
 
 
 -------------------------------------------------------------------------------------------------------------
-# QKDNetSim UML Diagram Explanation  
+# QKDNetSim UML Diagram  
+
+![qkd_model_uml](https://github.com/user-attachments/assets/c55edd68-16f8-4def-bcdb-744d03470a0f)
+
 
 ## QKD Post-Processing  
 
