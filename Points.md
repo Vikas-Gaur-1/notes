@@ -36,6 +36,7 @@
 
 ![sim-components](https://github.com/user-attachments/assets/bec80e09-d38c-426a-b61d-e078129f7c65)
 
+It has two major modules in the QKDNetSim system: **QKD Core** (left) and **QKD Application** (right).
 
 ---
 
